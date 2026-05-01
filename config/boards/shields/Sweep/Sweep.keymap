@@ -61,7 +61,7 @@
             bindings
                 = <&rgb_ug RGB_ON>
                 , <&rgb_ug RGB_GAME>
-                , <&to _GAME>
+                , <&tog _GAME>
                 ;
         };
 
@@ -306,23 +306,6 @@
    &kp Z        &kp X        &kp C       &kp V       &kp B     &kp N  &kp M       &kp COMMA   &kp DOT      &kp LCTRL
                                           &kp TAB   &kp SPACE   &kp RET   &kp BSPC
                         >;
-                };
-
-
-                extra1 {
-                        status = "reserved";
-                };
-
-                extra2 {
-                        status = "reserved";
-                };
-
-                extra3 {
-                        status = "reserved";
-                };
-
-                extra4 {
-                        status = "reserved";
                 };
     };
 };
