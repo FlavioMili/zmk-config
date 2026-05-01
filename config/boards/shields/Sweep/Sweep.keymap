@@ -21,7 +21,7 @@
 #define RGB_SYM RGB_COLOR_HSB(40,100,4)
 #define RGB_NAV RGB_COLOR_HSB(130,100,5)
 #define RGB_BTF RGB_COLOR_HSB(230,100,5)
-#define RGB_BTF RGB_COLOR_HSB(80,180, 40)
+#define RGB_GAME RGB_COLOR_HSB(80,180, 40)
 
 &sk {
     quick-release;
@@ -60,8 +60,8 @@
             tap-ms = <0>;
             bindings
                 = <&rgb_ug RGB_ON>
-                , <&rgb_ug RGB_COLOR_HSB(80,180,40)>
-                , <&tog _GAME>
+                , <&rgb_ug RGB_GAME>
+                , <&to _GAME>
                 ;
         };
 
