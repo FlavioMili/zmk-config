@@ -60,8 +60,8 @@
             tap-ms = <0>;
             bindings
                 = <&rgb_ug RGB_ON>
-                , <&rgb_ug RGB_NAV>
-                , <&tog _NAV>
+                , <&rgb_ug RGB_COLOR_HSB(80,180,40)>
+                , <&tog _GAME>
                 ;
         };
 
@@ -167,24 +167,24 @@
             layers = <_BASE>;
         };
 
-      combo_ESC {
+      combo_TAB {
             timeout-ms = <50>;
             key-positions = <LTR LTP>;
-            bindings = <&kp ESC>;
-            layers = <_BASE _SYM>;
-        };
-
-        combo_TAB {
-            timeout-ms = <50>;
-            key-positions = <LMR LMP>;
             bindings = <&kp TAB>;
             layers = <_BASE _SYM>;
         };
 
-        combo_DEL {
+        combo_ESC {
+            timeout-ms = <50>;
+            key-positions = <LMR LMP>;
+            bindings = <&kp ESC>;
+            layers = <_BASE _SYM>;
+        };
+
+        combo_BSPC {
             timeout-ms = <50>;
             key-positions = <RTP RTR>;
-            bindings = <&kp DEL>;
+            bindings = <&kp BSPC>;
             layers = <_BASE _SYM>;
         };
 
@@ -302,9 +302,9 @@
 //       | _SYM(ESC) | _NAV(SPC) |    | _SYM(BSPC) | _NAV(RET) |
                         bindings = <
    &kp Q        &kp W        &kp E       &kp R       &kp T     &kp Y  &kp U       &kp I       &kp O        &kp P
-   &kp A        &kp S        &kp D       &kp F       &kp G     &kp H  &kp J       &kp K       &kp L        &kp SEMI
-   &kp Z        &kp X        &kp C       &kp V       &kp B     &kp N  &kp M       &kp COMMA   &kp DOT      &kp SQT
-                            &tht _SYM TAB  &tht _NAV SPACE     &tht _SYM RET  &tht _NAV BSPC
+   &kp A        &kp S        &kp D       &kp F       &kp G     &kp H  &kp J       &kp K       &kp L        &kp LSHIFT
+   &kp Z        &kp X        &kp C       &kp V       &kp B     &kp N  &kp M       &kp COMMA   &kp DOT      &kp LCTRL
+                                          &kp TAB   &kp SPACE   &kp RET   &kp BSPC
                         >;
                 };
 
