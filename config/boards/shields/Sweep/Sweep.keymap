@@ -37,7 +37,7 @@
             tap-ms = <0>;
             bindings
                 = <&rgb_ug RGB_OFF>
-                , <&tog _NAV>
+                , <&to _BASE>
                 ;
         };
 
@@ -49,7 +49,7 @@
             bindings
                 = <&rgb_ug RGB_ON>
                 , <&rgb_ug RGB_NAV>
-                , <&tog _NAV>
+                , <&to _NAV>
                 ;
         };
 
@@ -61,7 +61,7 @@
             bindings
                 = <&rgb_ug RGB_ON>
                 , <&rgb_ug RGB_GAME>
-                , <&tog _GAME>
+                , <&to _GAME>
                 ;
         };
 
@@ -119,35 +119,28 @@
             timeout-ms = <50>;
             key-positions = <RMR RMM RMI>;
             bindings = <&to_NAV>;
-            layers = <_BASE _SYM>;
+            layers = <_BASE>;
         };
 
         combo_GAME {
             timeout-ms = <50>;
             key-positions = <LMR LMM LMI>;
             bindings = <&to_GAME>;
-            layers = <_BASE _SYM _GAME>;
-        };
-
-        combo_GAMER {
-            timeout-ms = <50>;
-            key-positions = <LMR LMM LMI>;
-            bindings = <&to_GAME>;
-            layers = <_GAME>;
+            layers = <_BASE>;
         };
 
         combo_BASER {
             timeout-ms = <50>;
             key-positions = <RMR RMM RMI>;
             bindings = <&to_BASE>;
-            layers = <_NAV>;
+            layers = <_NAV _GAME>;
         };
 
         combo_BASEL {
             timeout-ms = <50>;
             key-positions = <LMR LMM LMI>;
             bindings = <&to_BASE>;
-            layers = <_NAV>;
+            layers = <_NAV _GAME>;
         };
 
 // ------------------------- UTILITY COMBOS --------------------------------
