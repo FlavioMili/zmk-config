@@ -126,21 +126,28 @@
             timeout-ms = <50>;
             key-positions = <LMR LMM LMI>;
             bindings = <&to_GAME>;
-            layers = <_BASE _SYM>;
+            layers = <_BASE _SYM _GAME>;
+        };
+
+        combo_GAMER {
+            timeout-ms = <50>;
+            key-positions = <LMR LMM LMI>;
+            bindings = <&to_GAME>;
+            layers = <_GAME>;
         };
 
         combo_BASER {
             timeout-ms = <50>;
             key-positions = <RMR RMM RMI>;
             bindings = <&to_BASE>;
-            layers = <_NAV _GAME>;
+            layers = <_NAV>;
         };
 
         combo_BASEL {
             timeout-ms = <50>;
             key-positions = <LMR LMM LMI>;
             bindings = <&to_BASE>;
-            layers = <_NAV _GAME>;
+            layers = <_NAV>;
         };
 
 // ------------------------- UTILITY COMBOS --------------------------------
