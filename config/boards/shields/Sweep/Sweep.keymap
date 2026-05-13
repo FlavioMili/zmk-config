@@ -167,22 +167,15 @@
             layers = <_BASE>;
         };
 
-      combo_TAB {
-            timeout-ms = <50>;
+      combo_ESC {
+            timeout-ms = <40>;
             key-positions = <LTR LTP>;
-            bindings = <&kp TAB>;
-            layers = <_BASE _SYM>;
-        };
-
-        combo_ESC {
-            timeout-ms = <50>;
-            key-positions = <LMR LMP>;
             bindings = <&kp ESC>;
             layers = <_BASE _SYM>;
         };
 
         combo_BSPC {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <RTP RTR>;
             bindings = <&kp BSPC>;
             layers = <_BASE _SYM>;
